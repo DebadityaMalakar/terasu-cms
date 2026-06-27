@@ -1,0 +1,25 @@
+# Secrets — never commit
+.env
+.env.local
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# SQLite dev database
+database/data.db
+.tmp/
+
+# Strapi generated types (regenerated on start)
+types/generated/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db

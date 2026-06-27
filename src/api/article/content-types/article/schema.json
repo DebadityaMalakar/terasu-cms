@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": "A Terasu critique of a science/tech news item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "targetField": "correctedHeadline",
+      "required": true
+    },
+    "originalHeadline": {
+      "type": "string",
+      "required": true
+    },
+    "correctedHeadline": {
+      "type": "string",
+      "required": true
+    },
+    "tldr": {
+      "type": "text",
+      "required": true
+    },
+    "failureModes": {
+      "type": "json",
+      "required": true
+    },
+    "publication": {
+      "type": "string"
+    },
+    "sourceUrl": {
+      "type": "string"
+    },
+    "originalPublishDate": {
+      "type": "date"
+    },
+    "author": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "json"
+    },
+    "critique": {
+      "type": "json"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "heroSrc": {
+      "type": "string"
+    },
+    "heroAlt": {
+      "type": "string"
+    },
+    "heroCap": {
+      "type": "string"
+    },
+    "section": {
+      "type": "enumeration",
+      "enum": ["discourse", "tech", "science", "archives"],
+      "required": true,
+      "default": "discourse"
+    },
+    "sources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.source"
+    }
+  }
+}

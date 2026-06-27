@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_sources",
+  "info": {
+    "displayName": "Source",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}
